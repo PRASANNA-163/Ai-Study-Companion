@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { Prisma } from "@prisma/client";
 import { db } from "@/lib/db";
 import { getCurrentUser, assertProjectOwnership } from "@/lib/auth";
 import { embedText, toVectorLiteral } from "@/lib/embeddings";
@@ -136,7 +137,7 @@ export async function POST(req: NextRequest) {
       type,
       difficulty,
       question: questionData.question,
-      options: questionData.options ?? null,
+      options: questionData.options ?? Prisma.JsonNull,
       correctAnswer:
         type === "OPEN_ENDED" ? JSON.stringify(questionData.modelAnswerKeyPoints ?? []) : questionData.correctAnswer,
       explanation: questionData.explanation ?? null,
