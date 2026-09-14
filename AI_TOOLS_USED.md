@@ -10,7 +10,7 @@ Per the PRD's transparency requirement, this documents which AI tools were used,
 - **What it contributed**: The majority of the initial code scaffold across the stack — schema design, API route implementations, the worker/job-queue pattern, the frontend pages, and the documentation files (this one, ARCHITECTURE.md, KNOWN_LIMITATIONS.md, FUTURE_IMPROVEMENTS.md).
 - **Used during development, not inside the final product** — Claude is not called by the running application at any point.
 
-### [Add any other tools you personally used while building this — e.g. GitHub Copilot for inline completions, ChatGPT for a specific debugging session, etc. Be specific about which files/sessions.]
+
 
 ## Product AI (used by the deployed application)
 
