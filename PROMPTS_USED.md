@@ -33,4 +33,4 @@ Organized by purpose, per the PRD's request. These are paraphrased summaries of 
 - "Write the architecture documentation, including a Mermaid diagram, explaining the major trade-offs I made and why."
 - "Write the known limitations and future improvements sections honestly — I'd rather document what I cut deliberately than have it look like an oversight."
 
-## [Add any prompts from other tools you used, if any, in the same format]
+
